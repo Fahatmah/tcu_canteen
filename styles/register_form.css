@@ -1,0 +1,11 @@
+.register_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.register_container form {
+  width: 50rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 0 60px #33333318;
+}

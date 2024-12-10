@@ -1,0 +1,84 @@
+.payment_container .box.form_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  margin: 0;
+  border: 0;
+  padding: 0;
+  box-shadow: none;
+  margin-block: 8rem;
+}
+
+.box_wrapper {
+  width: 40rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: #fff;
+  box-shadow: 0 0 60px #3333331a;
+  border-radius: 8px;
+  border: 1px solid #3333331b;
+}
+
+.payment_container .box-header {
+  background: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1rem;
+  padding-block: 4rem;
+}
+
+.payment_container .box-header > * {
+  margin: 0;
+}
+
+.payment_container .box-header h1 {
+  font-size: 5rem;
+  color: #ed1b24;
+}
+
+form {
+  width: 100%;
+  padding: 4rem;
+}
+
+form .form-group input {
+  font-family: 'League Spartan', sans-serif;
+}
+
+form .text-center,
+.text-center .group {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+form .text-center {
+  flex-direction: column-reverse;
+}
+
+.text-center .group {
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.text-center .group a {
+  color: #ed1b24;
+}
+
+.text-center button {
+  width: 100%;
+  padding: 1rem;
+  font-family: 'League Spartan', sans-serif;
+  /* background-color: #; */
+}

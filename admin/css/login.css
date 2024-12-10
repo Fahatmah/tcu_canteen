@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* primary */
+  --p-clr-100: #ed1b24;
+  --p-clr-200: #ff4015;
+  --p-clr-300: #0000d3;
+  --p-clr-400: #ffb222;
+  --p-clr-500: #0097d3;
+  --p-clr-600: #00ad4e;
+  --p-clr-700: #3a0080;
+
+  /* neutral */
+  --n-clr-100: #fefefe;
+  --n-clr-200: #f9f9f9;
+  --n-clr-300: #0a2e28;
+  --n-clr-400: #012120;
+}
+
+@font-face {
+  font-family: 'LeagueSpartan-Regular';
+  src: url(../fonts/LeagueSpartan-Regular.ttf);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'LeagueSpartan-Regular', Helvetica, Arial, sans-serif;
+  background-color: var(--p-clr-100);
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-login {
+  width: 30rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  background: var(--n-clr-100);
+}
+
+.form-login .form-login-heading {
+  color: var(--p-clr-100);
+}
+
+.form-login .form-control {
+  position: relative;
+  height: auto;
+  box-sizing: border-box;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.form-login input {
+  border: 0;
+  outline: 0;
+  font-weight: bold;
+  border: 1px solid #33333389;
+}
+
+
+.form-login input {
+  color: var(--p-clr-100);
+}
+
+.form-login input::placeholder {
+  color: #3333339a;
+  font-weight: normal;
+}
+
+.form-login .btn {
+  width: 100%;
+  padding: 1rem;
+  color: var(--n-clr-100);
+  font-size: 1.8rem;
+  background-color: var(--p-clr-100);
+}
+
+.form-login .btn:hover {
+  background-color: #ff4750;
+}

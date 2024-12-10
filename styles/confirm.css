@@ -1,0 +1,27 @@
+.confirm_payment_container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.confirm_payment_container .confirm_container {
+  width: 40rem;
+  background-color: white;
+  margin: 4rem;
+  padding: 4rem;
+  border-radius: 8px;
+  border: 1px solid #ed1b24;
+}
+
+.confirm_payment_container .confirm_container h1 {
+  font-weight: bold;
+  color: #ed1b24;
+  text-align: center;
+}
+
+.confirm_payment_container .confirm_container input,
+.confirm_payment_container .confirm_container button,
+.confirm_payment_container .confirm_container select {
+  font-family: 'League Spartan', sans-serif;
+}

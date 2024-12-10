@@ -1,0 +1,156 @@
+.product_detail_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.product_detail_container #productMain {
+  width: 100rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 2rem;
+}
+
+#productMain #mainImage {
+  width: 50rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.label.sale {
+  left: 0;
+}
+
+.product_form_container {
+  width: 50rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.product_form {
+  width: 100%;
+  padding: 0;
+  padding: 2rem;
+  border: 1px solid #ed1b24;
+  border-radius: 4px;
+}
+
+.product_form .product_title {
+  margin: 0;
+  color: #ed1b24;
+}
+
+.product_form .form-horizontal {
+  padding: 0;
+  margin-top: 2rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.product_form .form-horizontal .field_form,
+.product_form .form-horizontal .field_form label,
+.product_form .form-horizontal .price {
+  margin: 0;
+}
+
+.product_form .form-horizontal .field_form {
+  width: 32rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.product_form .form-horizontal .field_form label {
+  color: #ed1b24;
+}
+
+.product_form .form-horizontal .field_form select {
+  outline: 0;
+  border: 0;
+  background: none;
+  padding: 0;
+  width: 20rem;
+  border: 1px solid #ed1b24;
+  color: #ed1b24;
+  font-family: 'League Spartan', sans-serif;
+  padding: 1rem;
+}
+
+.product_form .form-horizontal .field_form select option {
+  padding: 0;
+  padding: 0.5rem;
+}
+
+.product_form .form-horizontal .price {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #ed1b24;
+  margin-bottom: 1rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.product_form .form-horizontal .price del {
+  color: #333;
+  font-weight: normal;
+  opacity: 0.4;
+}
+
+.form-horizontal .buttons {
+  margin: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row-reverse;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+.form-horizontal .buttons > * {
+  outline: 0;
+  border: 0;
+  padding: 1.5rem;
+  color: white;
+  border-radius: 4px;
+}
+
+.form-horizontal .buttons .add_cart {
+  width: 100%;
+  background-color: #ed1b24;
+  font-family: 'League Spartan', sans-serif;
+  color: white;
+}
+
+.form-horizontal .buttons .add_cart:hover {
+  color: #ed1b24;
+  font-weight: bold;
+  border: 1px solid #ed1b24;
+  background-color: #fff;
+}
+
+.form-horizontal .buttons .add_wishlist {
+  width: 6rem;
+  background-color: #333;
+}
+
+.form-horizontal .buttons .add_wishlist:hover {
+  background-color: #ed1b24;
+}
+
+.product_desc {
+  margin: 0;
+  width: 100%;
+}

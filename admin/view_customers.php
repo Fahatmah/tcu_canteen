@@ -1,0 +1,160 @@
+<?php
+
+if(!isset($_SESSION['admin_email'])){
+
+echo "<script>window.open('login.php','_self')</script>";
+
+}
+
+else {
+
+
+?>
+
+<div class="row">
+  <!-- 1 row Starts -->
+
+  <div class="col-lg-12">
+    <!-- col-lg-12 Starts -->
+
+    <ol class="breadcrumb">
+      <!-- breadcrumb Starts -->
+
+      <li class="active">
+
+        <i class="fa fa-dashboard"></i> Dashboard / View Customers
+
+      </li>
+
+    </ol><!-- breadcrumb ends -->
+
+  </div><!-- col-lg-12 ends -->
+
+</div><!-- 1 row ends -->
+
+<div class="row">
+  <!-- 2 row Starts -->
+
+  <div class="col-lg-12">
+    <!-- col-lg-12 Starts -->
+
+    <div class="panel panel-default">
+      <!-- panel panel-default Starts -->
+
+      <div class="panel-heading">
+        <!-- panel-heading Starts -->
+
+        <h3 class="panel-title">
+          <!-- panel-title Starts -->
+
+          View Customers
+
+        </h3><!-- panel-title ends -->
+
+      </div><!-- panel-heading ends -->
+
+
+      <div class="panel-body">
+        <!-- panel-body Starts -->
+
+        <div class="table-responsive">
+          <!-- table-responsive Starts -->
+
+          <table class="table table-bordered table-hover table-striped">
+            <!-- table table-bordered table-hover table-striped Starts -->
+
+            <thead>
+              <!-- thead Starts -->
+
+              <tr>
+
+                <th>#</th>
+                <th>Name</th>
+                <th>Email</th>
+                  <th>Student Num</th>
+                <th>Phone Number</th>
+                <!-- <th>Delete</th> -->
+
+
+              </tr>
+
+            </thead><!-- thead ends -->
+
+
+            <tbody>
+              <!-- tbody Starts -->
+
+              <?php
+
+$i=0;
+
+$get_c = "select * from customers";
+
+$run_c = mysqli_query($con,$get_c);
+
+while($row_c=mysqli_fetch_array($run_c)){
+
+$c_id = $row_c['customer_id'];
+
+$c_name = $row_c['customer_name'];
+
+$c_email = $row_c['customer_email'];
+    
+$c_stno = $row_c['customer_stno'];
+    
+$c_contact = $row_c['customer_contact'];
+
+$i++;
+
+
+
+
+?>
+
+              <tr>
+
+                <td><?php echo $i; ?></td>
+
+                <td><?php echo $c_name; ?></td>
+
+                <td><?php echo $c_email; ?></td>
+                  
+                  <td><?php echo $c_stno; ?></td>
+
+                <td><?php echo $c_contact; ?></td>
+
+                <!-- <td class="button delete">
+
+                  <a href="index.php?customer_delete=<?php echo $c_id; ?>">
+
+                    <i class="fa fa-trash-o"></i>
+
+                  </a>
+
+
+                </td> -->
+
+
+              </tr>
+
+              <?php } ?>
+
+
+            </tbody><!-- tbody ends -->
+
+
+
+          </table><!-- table table-bordered table-hover table-striped ends -->
+
+        </div><!-- table-responsive ends -->
+
+      </div><!-- panel-body ends -->
+
+
+    </div><!-- panel panel-default ends -->
+
+  </div><!-- col-lg-12 ends -->
+
+</div><!-- 2 row ends -->
+
+<?php } ?>

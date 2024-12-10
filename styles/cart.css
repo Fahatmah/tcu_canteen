@@ -1,0 +1,104 @@
+.cart_container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 1rem;
+  padding: 8rem 8rem;
+  padding-top: 0;
+}
+
+.cart_container .table {
+  margin: 0;
+}
+
+.cart_container .cart,
+.cart_container .order_summary_container {
+  border-radius: 6px;
+  box-shadow: 0 0 60px #3333331d;
+  border: 1px solid #3333331d;
+}
+
+.cart_container .cart {
+  width: 100%;
+  border: 1px solid #ed1b24;
+}
+
+.cart h1 {
+  color: #ed1b24;
+  font-weight: bold;
+}
+
+.cart form .table tbody tr td .product_title {
+  color: #ed1b24;
+}
+
+.cart button {
+  font-family: 'League Spartan', sans-serif;
+}
+
+.cart .continue_btn {
+  outline: 0;
+  border: 0;
+  padding: 0;
+  color: #ed1b24;
+}
+
+.cart .box-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cart_container .cart .box-footer .checkout_btn {
+  background-color: #ed1b24;
+}
+
+.cart_container .cart .box-footer .updata_btn {
+  background-color: #333;
+}
+
+.cart_container .order_summary_container {
+  padding: 4rem;
+  border: 1px solid #ed1b24;
+}
+
+.cart_container .order_summary_container .box-header h3 {
+  padding: 0;
+  color: #ed1b24;
+  text-align: left;
+  padding-block: 1rem;
+  font-weight: bold;
+}
+
+.table th,
+.table td {
+  color: #ed1b24;
+}
+
+.table thead tr th,
+.table tbody tr td,
+.table tbody tr th,
+.table tfoot tr th {
+  border: 0;
+}
+
+.table thead tr th {
+  border-bottom: 1px solid #0881715b;
+}
+.table tbody tr:not(:first-child) td,
+.table tbody tr:not(:first-child) th,
+.table tfoot tr th {
+  border-top: 1px solid #0881715b;
+}
+
+.table tbody {
+  margin-bottom: 2rem;
+}
+
+.table tfoot tr th {
+  padding: 2rem;
+}
+
+.table tfoot tr th:nth-child(2) {
+  text-align: right;
+}

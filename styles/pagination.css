@@ -1,0 +1,24 @@
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.pagination li a {
+  border: 0;
+  outline: 0;
+  border-radius: 4px;
+  color: #ed1b24;
+}
+
+.pagination li:first-child a,
+.pagination li:last-child a {
+  border: 1px solid #ed1b24;
+}
+
+.pagination li:first-child a:hover,
+.pagination li:last-child a:hover {
+  background-color: #ed1b24;
+  color: white;
+}

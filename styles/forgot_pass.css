@@ -1,0 +1,54 @@
+.forgot_password_container,
+.forgot_password_container .forgot_password_form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.forgot_password_container .forgot_password_form {
+  gap: 2rem;
+  padding: 1rem 4rem;
+  width: 60rem;
+  margin: 2rem;
+  border: 1px solid #ed1b24;
+  border-radius: 8px;
+}
+
+.forgot_password_container .forgot_password_form .header h1,
+.forgot_password_container .forgot_password_form p {
+  margin: 0;
+}
+
+.forgot_password_container .forgot_password_form p {
+  font-size: 2rem;
+  color: #585a5a;
+}
+
+.forgot_password_container .forgot_password_form form {
+  padding: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.forgot_password_container .forgot_password_form form input {
+  font-family: 'League Spartan', sans-serif;
+}
+
+.forgot_password_container .forgot_password_form form input:first-child {
+  color: #ed1b24;
+}
+
+.forgot_password_container .forgot_password_form form input[type='submit'] {
+  background-color: #ed1b24;
+}
+
+.forgot_password_container
+  .forgot_password_form
+  form
+  input[type='submit']:hover {
+  background-color: #13aaa0;
+}
