@@ -10,7 +10,7 @@
       <a href="shop.php?c_id=<?php echo $customer_id; ?>">Canteen</a>
     </h1>
   <h1 class="payment_link_text">
-    <a href="order.php?c_id=<?php echo $customer_id; ?>">Payment</a>
+    <a href="order_product.php?c_id=<?php echo $customer_id; ?>">Payment</a>
   </h1>
   <?php
   $i = 0;

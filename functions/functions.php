@@ -9,6 +9,7 @@ function getRealUserIp(){
         case (!empty($_SERVER['HTTP_X_FORWARDED_FOR'])) : return $_SERVER['HTTP_X_FORWARDED_FOR'];
         default : return $_SERVER['REMOTE_ADDR'];
     }
+    // return $_SERVER['REMOTE_ADDR'];
 }
 /// IP address code Ends /////
 
