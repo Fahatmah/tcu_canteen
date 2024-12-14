@@ -124,13 +124,11 @@ if (!isset($_SESSION['admin_email'])) {
                 <td><?php echo $qty; ?></td>
                 <td><?php echo $order_date; ?></td>
                 <td>₱<?php echo $due_amount ?></td>
-                <td><?php echo $order_status == 'pending' ? '<div style="color:red;">Pending</div>' : 'Completed'; ?>
-                </td>
-                <!-- <td class="button delete">
-                  <a href="index.php?order_delete=<?php echo $order_id; ?>">
-                    <i class="fa fa-trash-o"></i>
-                  </a>
-                </td> -->
+                <?php if($order_status == 'pending'){?>
+                <td style="color:red;">Pending</td>
+                <?php }else {?>
+                  <td class="button delete"><a href="index.php?order_delete=<?php echo $order_id; ?>">Served</a></td>
+               <?php } ?>
               </tr>
               <?php } ?>
             </tbody>

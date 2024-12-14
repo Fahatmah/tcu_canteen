@@ -24,7 +24,7 @@ $run_delete = mysqli_query($con,$delete_order);
 
 if($run_delete){
 
-echo "<script>alert('Order Has Been Deleted')</script>";
+echo "<script>alert('Order Has Been served')</script>";
 
 echo "<script>window.open('index.php?view_orders','_self')</script>";
 
